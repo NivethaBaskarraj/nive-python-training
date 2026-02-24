@@ -1,0 +1,38 @@
+18-02-2026 training class
+
+
+authentication commands	explanation
+
+1. git config --global user.name "***"
+git config --global user.mail "***"			
+git config --global --list
+	setting in github-->create PAT--> github->settings --> Dev.settings->PAT
+2. git clone "url"	press code--> copy url->url ends with .git
+3. git pull origin main	to bring the repo to local
+4. git add.	. represents current directory, * lists all the directory eg. git add. folder and file(location)
+5. git commit -m "**"	-m is for message. give the msg inside the " "
+6. git push origin main	
+
+
+
+Task 1
+
+number of rounds for mark percentage
+
+Input:
+percentage of marks
+
+example:
+[60,73,78,86,79,92]
+
+output:
+no of rounds fpr each percentage of marks 
+
+example:
+['NA','3R','3R','1R','3R','1R']
+
+rules:
+
+<=70 --> not eligible
+between 70 to 85 --> 3 rounds
+85 and above --> 1 round
