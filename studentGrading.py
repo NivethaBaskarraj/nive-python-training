@@ -12,20 +12,21 @@ class Grade:
         for i in range(self.number):
             mark = int(input( 'Enter the marks:'))
             self.marks.append(mark)
+        print('The marks are: ', self.marks)
         return self.marks
 
     #function to calculate the mark and add them in a list
     def calculate_mark(self):
         self.result = []
         for i in self.marks:
-            if i < 0 or i > 100:
-                self.result.append('Invalid Marks')
-            elif i >= 40:
-                self.result.append('Pass')
+            if i > 0 and i < 100:
+                if i >= 40:
+                    self.result.append('Pass')
+                else:
+                    self.result.append('Fail')
             else:
-                self.result.append('Fail')
-        else:
-            self.result.append('Invalid Marks')
+                self.result.append('Invalid Marks')
+        print('The results are: ', self.result)
         return self.result
 
     #function to calculate the total marks
