@@ -1,7 +1,8 @@
 def factorial (number):
     if number == 1:
-        print ('the factorial of', number, 'is', number)
+        return 1
     else:
-        print ()
-number=int(input('Enter a number:'))
-print( factorial( number))
+        return number * factorial(number - 1)
+
+number = int(input('Enter a number:'))
+print('The factorial of ', number, 'is ', factorial(number))
