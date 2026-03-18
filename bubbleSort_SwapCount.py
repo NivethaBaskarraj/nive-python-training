@@ -9,6 +9,7 @@ def bubbleSort(array):
                 print(f'modified array is {array}')
         if swapped == 0:
             break
+    print(50 * '-')
     print(f'number of swaps is {swapped}')
     return array
 
@@ -17,5 +18,7 @@ array = []
 for i in range(number):
     element = int(input(f'enter the element {i + 1}:'))
     array.append(element)
+print(50 * '-')
 result = bubbleSort(array)
 print(f'sorted array is {result}')
+print(50 * '-')

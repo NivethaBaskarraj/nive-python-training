@@ -16,5 +16,7 @@ array = []
 for i in range(number):
     element = int(input(f'enter the element {i + 1}:'))
     array.append(element)
+print(50 * '-')
 result = reverse_bubble_sort(array)
 print(result)
+print(50 * '-')
